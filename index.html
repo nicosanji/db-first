@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="container text-center py-2">
+    <h1>SECOND HAND CAR STORE</h1>
+  </header>
+  <main>
+    <div class="container">
+      <table class="table table-dark table-striped table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">NAME</th>
+            <th scope="col">COLUMNS</th>
+            <th scope="col">TYPES</th>
+            <th scope="col">ATTRIBUTES</th>
+            <th scope="col">INDEX</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-primary">Second Hand Car Store</th>
+            <td class="fw-bold">Id</td>
+            <td>INT</td>
+            <td>AUTO_INCREMENT</td>
+            <td>PRIMARY INDEX</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Brand</td>
+            <td>VARCHAR(20)</td>
+            <td>NOT NULL</td>
+            <td>INDEX</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Model</td>
+            <td>VARCHAR(50)</td>
+            <td>NOT NULL</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Horsepower (HP)</td>
+            <td>SMALLINT</td>
+            <td>NOT NULL</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Engine_Displacement ( cm<sup>3</sup> )</td>
+            <td>SMALLINT</td>
+            <td>NULL</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Gearbox</td>
+            <td>CHAR(10)</td>
+            <td>NOT NULL</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Power_Supply</td>
+            <td>VARCHAR(20)</td>
+            <td>NOT NULL</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Color</td>
+            <td>SMALLINT</td>
+            <td>NOT NULL</td>
+            <td>INDEX</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Doors</td>
+            <td>TINYINT</td>
+            <td>NULL, DEFAULT(3)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Km_Done</td>
+            <td>FLOAT(8,2)</td>
+            <td>NOT NULL</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Last_Revision</td>
+            <td>DATE</td>
+            <td>NULL</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Matriculation_Year</td>
+            <td>YEAR</td>
+            <td>NOT NULL</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Price (€.)</td>
+            <td>DECIMAL(10,2)</td>
+            <td>NOT NULL</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 class="text-center py-2">CARS</h2>
+    <div class="container-fluid">
+      <table class="table table-primary table-striped table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Horsepower (HP)</th>
+            <th scope="col">Engine_Displacement ( cm<sup>3</sup> )</th>
+            <th scope="col">Gearbox</th>
+            <th scope="col">Power_Supply</th>
+            <th scope="col">Color</th>
+            <th scope="col">Doors</th>
+            <th scope="col">Km_Done</th>
+            <th scope="col">Last_Revision</th>
+            <th scope="col">Matriculation_Year</th>
+            <th scope="col">Price (€.)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Fiat</td>
+            <td>500</td>
+            <td>70</td>
+            <td>1200</td>
+            <td>automatic</td>
+            <td>gasoline</td>
+            <td>43</td>
+            <td>3</td>
+            <td>225465</td>
+            <td></td>
+            <td>2013</td>
+            <td>8000,00</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Alfa Romeo</td>
+            <td>Giulia</td>
+            <td>185</td>
+            <td>2400</td>
+            <td>manual</td>
+            <td>diesel</td>
+            <td>1498</td>
+            <td>5</td>
+            <td>196001</td>
+            <td>2021-04-15</td>
+            <td>2017</td>
+            <td>25000,00</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Lamborghini</td>
+            <td>Urus</td>
+            <td>300</td>
+            <td></td>
+            <td>sequential</td>
+            <td>gasoline</td>
+            <td>2201</td>
+            <td>5</td>
+            <td>55030</td>
+            <td>2020-05-25</td>
+            <td>2019</td>
+            <td>157000,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+
+</html>
